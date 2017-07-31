@@ -1,0 +1,30 @@
+#head {
+    background-image: url("../img/code.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    -webkit-mask-image:-webkit-gradient(linear, left center, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
+}
+
+#head h3 {
+    font-family: "Brush Script MT", cursive;
+    font-size: 50px;
+    padding-top: 40px;
+    color: #fffa00;
+    text-shadow: 3px 3px 0 #000,
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+}
+
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Lato", sans-serif;
+}
+
+.nav-pills > li {
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+

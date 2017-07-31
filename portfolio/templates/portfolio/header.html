@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Colton Sweeney</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'portfolio/css/bootstrap.min.css' %}" type = "text/css"/>
+	<link rel="stylesheet" href="{% static 'portfolio/css/header.css' %}" type="text/css"/>
+	<script src="https://use.fontawesome.com/c534b52160.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<style type="text/css">
+		html,
+		body {
+		  height:100%
+		}
+	</style>
+</head>
+
+<body class="body" style="background-color:#d1e2ff">
+	<div class="container-fluid" style="min-height:95%; ">
+		<div class="row" id="head">
+			  <div class="col-sm-12">
+				  <br>
+				  <center>
+				  <h3>Colton Sweeney</h3>
+				  </center>
+			  </div>
+		</div>
+
+		<div class="row">
+		  <div class="col-sm-2">
+		  <br>
+
+		  <br>
+		   <!-- Great, til you resize. -->
+			<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
+			<div class="well bs-sidebar" id="sidebar" style="background-color:#fff">
+			  <ul class="nav nav-pills nav-stacked">
+				<li><a href='/'><span class="fa fa-home" aria-hidden="true"></span>    Home</a></li>
+				<li><a href='/blog/'><span class="fa fa-paper-plane-o" aria-hidden="true"></span>    Blog</a></li>
+				<li><a href='/contact/'><span class="fa fa-phone" aria-hidden="true"></span>    Contact</a></li>
+			  </ul>
+			</div> <!--well bs-sidebar affix-->
+		  </div> <!--col-sm-2-->
+		  <div class="col-sm-10">
+		  
+				<div class='container-fluid'>
+				<br><br>
+			   	{% block content %}
+			   	{% endblock %}	
+				</div>
+		  </div>
+		</div> 
+	</div>
+	<footer class="footer text-right">
+		<div class="container-fluid" style='margin-left:15px'>
+			<p><a href="/contact/" target="blank"><span class="fa fa-paper-plane"></span></a> | <a href="https://www.linkedin.com/in/colton-sweeney/" target="blank"><span class="fa fa-linkedin"></span></a> | <a href="#" target="blank"><span class="fa fa-facebook"></span></a> | <a href="#" target="blank"><span class="fa fa-github"></span></a></p>
+		</div>
+	</footer>	
+	
+</body>
+
+</html>

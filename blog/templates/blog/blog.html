@@ -1,0 +1,13 @@
+{% extends "portfolio/header.html" %}
+{% block content %}
+  {% for post in object_list %}
+    <div class="well" id="blog-post">
+      <h5>
+        {{ post.date|date:"Y-m-d" }}
+        <a href="/blog/{{post.id}}"> {{ post.title }}</a>
+        <br>
+        <p>{{post.body|safe|linebreaks}}</p>
+      </h5>
+    </div>
+  {% endfor %}
+{% endblock %}
