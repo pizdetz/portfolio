@@ -1,6 +1,9 @@
 {% extends "portfolio/header.html" %}
 {% block content %}
-	{% for c in content%}
-	   <p>{{c}}</p>
-	{% endfor %}
+<h1>Contact</h1>
+<form role="form" action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
 {% endblock %}
