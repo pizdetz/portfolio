@@ -38,8 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'portfolio'
+    'portfolio',
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -122,7 +124,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = ''
+MEDIA_ROOT = 'portfolio/media/'
 MEDIA_URL = 'media/'
 
 #EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

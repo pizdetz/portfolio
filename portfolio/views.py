@@ -64,3 +64,6 @@ def contact(request):
 
 def services(request):
     return render(request, 'portfolio/services.html')
+
+def portfolio(request):
+    return render(request, 'portfolio/portfolio.html')

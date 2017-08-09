@@ -3,16 +3,17 @@
 
 <head>
   <title>Colton Sweeney</title>
-  <meta charset="utf-8" /> {% load static from staticfiles %}
+  <meta charset="utf-8" /> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> {% load static from staticfiles %}
   <link rel="stylesheet" href="{% static 'portfolio/css/index.css' %}">
   <link rel="stylesheet" href="{% static 'portfolio/css/bootstrap.min.css' %}" type="text/css">
   <link rel="icon" href="{% static 'portfolio/img/favicon_trans.png' %}">
+  <script src="{% static 'portfolio/js/index.js' %}"></script>
   <script src="{% static 'portfolio/js/bootstrap.min.js' %}"></script>
   <script src="https://use.fontawesome.com/c534b52160.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans+Condensed:300|Roboto+Condensed" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <style>
     .navbar {
       margin-bottom: 0;
@@ -47,11 +48,11 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/">Home</a></li>
-            <li><a href="/services">About</a></li>
-            <li><a href="/contact">Projects</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li class="home"><a href="/">Home</a></li>
+            <li class="services"><a href="/services">About</a></li>
+            <li class="portfolio"><a href="/portfolio">Portfolio</a></li>
+            <li class="blog"><a href="/blog">Blog</a></li>
+            <li class="contact"><a href="/contact">Contact</a></li>
           </ul>
         </div>
       </div>
