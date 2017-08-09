@@ -42,6 +42,7 @@ def contact(request):
             })
             content = template.render(context)
 
+            # Set up email and send to admin
             email = EmailMessage(
                 "New contact form submission",
                 content,
@@ -51,13 +52,18 @@ def contact(request):
             )
             email.send()
             send_mail('Subject here', content, contact_email, ['colton.sweeney@gmail.com'], fail_silently=False)
+
+            # Send notification to user that email has sent and redirect to contact page
             messages.add_message(request, messages.SUCCESS, 'Your email has been sent successfully.')
             return redirect('contact')
 
-    return render(request, 'portfolio/basic.html', {
+    return render(request, 'portfolio/contact.html', {
         'form': form_class,
         
     })
 
 def services(request):
     return render(request, 'portfolio/services.html')
+
+def portfolio(request):
+    return render(request, 'portfolio/portfolio.html')

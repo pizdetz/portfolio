@@ -1,0 +1,15 @@
+{% extends "portfolio/header.html" %} 
+
+{% block content %}
+
+<div class="jumbotron text-center banner">
+    <h1 style="color:white;text-shadow:1px 1px 3px;">Contact</h1>
+</div>
+<div class="well text-center">
+<form role="form" action="" method="post">
+    {% csrf_token %} {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
+</div>
+
+{% endblock %}

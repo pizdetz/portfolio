@@ -1,13 +1,20 @@
-{% extends "portfolio/header.html" %}
+{% extends "portfolio/header.html" %} 
 {% block content %}
+<div class="jumbotron text-center banner">
+  <h1 style="color:white;text-shadow:1px 1px 3px;">Blog</h1>
+</div>
+
+<div class="container-fluid">
   {% for post in object_list %}
-    <div class="well" id="blog-post">
-      <h5>
-        {{ post.date|date:"Y-m-d" }}
-        <a href="/blog/{{post.id}}"> {{ post.title }}</a>
-        <br>
-        <p>{{post.body|safe|linebreaks}}</p>
-      </h5>
-    </div>
+  <div class="well" id="blog-post">
+    <h5>
+      {{ post.date|date:"Y-m-d" }}
+      <a href="/blog/{{post.id}}"> {{ post.title }}</a>
+
+      <br>
+      <p>{{post.body|safe|linebreaks}}</p>
+    </h5>
+  </div>
   {% endfor %}
+</div>
 {% endblock %}
