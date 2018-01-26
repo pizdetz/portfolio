@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+from secrets import *
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'oqsp+$_xvsg$_=#7w0ffbj_#s_@0+$zg$snq0=(3@wui8x5=!d'
+SECRET_KEY = KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -131,6 +132,6 @@ MEDIA_URL = 'media/'
 DEFAULT_FROM_EMAIL = 'testing@example.com'
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'pizdetz'
-EMAIL_HOST_PASSWORD = 'Sweeney98'
+EMAIL_HOST_PASSWORD = HOST_PASSWORD
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
