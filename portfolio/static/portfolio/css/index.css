@@ -4,6 +4,13 @@
 	border-radius: 0;
 }
 
+* {
+	border-radius: 0 !important;
+}
+
+#blog-post {
+	text-align: left;
+}
     
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {
@@ -17,9 +24,15 @@
 	height: 100%;
 }
 
+.page-title {
+	color:white;
+	text-shadow:1px 1px 1px;
+}
+
 h1,
 a {
 	font-family: "Montserrat", sans-serif;
+	text-shadow:1px 1px 3px;
 }
 
 p {
@@ -37,7 +50,7 @@ p {
     
 /* Set black background color, white text and some padding */
 footer {
-	background-color: #555;
+	/*background-color: #555;*/
 	color: white;
 	padding: 15px;
 }
