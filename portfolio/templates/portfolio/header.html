@@ -22,10 +22,8 @@
     html, body {
       height: 100%;
     }
-
   </style>
 </head>
-
 <body>
   <!--Top Navigation Bar-->
   <nav class="navbar navbar-inverse">
@@ -36,7 +34,7 @@
         	<span class="icon-bar"></span>
         	<span class="icon-bar"></span>                        
       	</button>
-        <a class="navbar-brand" href="/"><img id="title" src="../../static/portfolio/img/title.png"></a>
+        <a class="navbar-brand" href="/"><img class="brand" src="../../static/portfolio/img/title.png"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
@@ -49,7 +47,6 @@
       </div>
     </div>
   </nav>
-
   <!--Notification Bar Under Navigation Bar-->
   {% if messages %}
   <ul class="messages">
@@ -58,9 +55,8 @@
     {% endfor %}
   </ul>
   {% endif %}
-
   <!--Body Area-->
-  <div class="container-fluid text-center">
+  <div id="body" class="container-fluid text-center">
     <div class="row content">
       <!--Center Content Container-->
         {% block content %} 
@@ -68,7 +64,6 @@
         {% endblock %}
     </div>
   </div>
-
 <!--Footer of Web Page-->
 <footer class="footer text-right navbar-fixed-bottom">
   <a href="https://twitter.com/coltonsdev"><i class="fa fa-twitter link"></i></a> |
