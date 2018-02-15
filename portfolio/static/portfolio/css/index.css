@@ -1,19 +1,20 @@
-/* Remove the navbar's default margin-bottom and rounded borders */
-.navbar {
-	margin-bottom: 0;
-	border-radius: 0;
-	height: 150px;
-}
-
+/* Remove border radius of all elements*/
 * {
 	border-radius: 0 !important;
 }
 
-#body {
-	padding-left: 50px;
-	padding-right: 50px;
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
 }
 
+.navbar-nav li a:hover, .navbar-nav > .active > a {
+	color: rgb(182, 0, 0);
+	background: #000000
+}
+
+/* Align blog posts to the left of the screen */
 #blog-post {
 	text-align: left;
 }
@@ -40,13 +41,11 @@ p {
 }
 
 .banner {
-	background-image: url(../img/codeblue.jpg);
+	background-image: url(../img/field_landscape.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-
-
     
 /* Set black background color, white text and some padding */
 footer {
