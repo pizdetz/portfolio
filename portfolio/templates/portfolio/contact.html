@@ -1,12 +1,17 @@
 {% extends "portfolio/header.html" %} 
-
 {% block content %}
 
-<div class="well text-center">
-<form role="form" action="" method="post">
-    {% csrf_token %} {{ form.as_p }}
-    <button type="submit">Submit</button>
-</form>
+<div class="jumbotron text-center header">
+    <h1 class="page-title">Contact</h1>
+</div>
+
+<div class="container-fluid content">
+    <div class="well text-center">
+        <form role="form" action="" method="post">
+            {% csrf_token %} {{ form.as_p }}
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </div>
 
 {% endblock %}

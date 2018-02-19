@@ -2,36 +2,20 @@
 .navbar {
 	margin-bottom: 0;
 	border-radius: 0;
-	height: 150px;
 }
 
 * {
 	border-radius: 0 !important;
 }
 
-#body {
-	padding-left: 50px;
-	padding-right: 50px;
-}
-
 #blog-post {
 	text-align: left;
-}
-    
-/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {
-	height: 450px
-}
-
-
-.page-title {
-	color:white;
-	text-shadow:1px 1px 1px;
 }
 
 h1,
 a {
 	font-family: "Montserrat", sans-serif;
+	color: white;
 	text-shadow:1px 1px 3px;
 }
 
@@ -39,15 +23,27 @@ p {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.banner {
-	background-image: url(../img/codeblue.jpg);
+/* Heading content container placed at tops of pages */
+.header {
+	background-image: url(../img/field_landscape.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
+.home-header {
+	background-image: url(../img/field_landscape.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 
-    
+/* Body content container of pages */
+.content {
+	padding-left: 75px;
+	padding-right: 75px;
+}
+
 /* Set black background color, white text and some padding */
 footer {
 	/*background-color: #555;*/
@@ -55,17 +51,12 @@ footer {
 	padding: 15px;
 }
 
-
 /***************/
 /*MEDIA QUERIES*/
 /***************/
 
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 768px) {
-	.sidenav {
-		height: auto;
-		padding: 15px;
-	}
 	.row.content {
 	  height: auto;
 	}
@@ -73,7 +64,7 @@ footer {
 		height: auto;
 	}
 	.brand {
-		content: url(../img/title.png);
+		content: url(../img/name.png);
 		width: 50%;
 		height: auto;
 	}
